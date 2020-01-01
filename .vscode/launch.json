@@ -1,0 +1,61 @@
+{
+
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MinGW_W64",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false, // 
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\Ming-Gw64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "g++.exe build active file"
+        }
+    ]
+    }
+    
+    // VSCode中预定义了一些变量可以方便配置, 以 /Code/ACM/.vscode/launch.json 为例来整体总结一下,
+    // .vscode里包含着如下文件
+    
+    // launch.json
+    // tasks.json
+    // c_cpp_configuration.json
+    
+    // ---------------------------------------------------------------------------------------
+    // ${workspaceFolder} :表示当前工作区文件夹路径, /Code/ACM
+    
+    // ${workspaceRootFolderName}:表示工作区的文件夹名, ACM
+    // ---------------------------------------------------------------------------------------
+    
+    // ${file}:文件自身的绝对路径，/Code/ACM/.vscode/launch.json
+    
+    // ${relativeFile}:文件在工作区中的路径, .vscode/launch.json
+    
+    // ${fileBasename}:当前文件的文件名，launch.json
+    
+    // ${fileBasenameNoExtension}:当前文件不带扩展名的文件名, launch
+    
+    // ${fileExtname}:当前文件的扩展名, .json
+    
+    // ${fileDirname}:文件所在的 文件夹路径, /Code/ACM/.vscode
+    
+    // ---------------------------------------------------------------------------------------
+    // ${lineNumber}:当前文件光标所在的行号
+    
+    // ${env:PATH}:系统中的环境变量
+    // ---------------------------------------------------------------------------------------
